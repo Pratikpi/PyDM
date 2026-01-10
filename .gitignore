@@ -1,0 +1,14 @@
+/pydm/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.env
+*.state
+# Ignore downloaded files for testing
+*.zip
+*.iso

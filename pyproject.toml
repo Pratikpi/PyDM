@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydm"
+version = "0.1.0"
+description = "High-performance Python Asynchronous Download Manager"
+readme = "README.md"
+authors = [
+  { name = "PyDM Developer", email = "dev@example.com" },
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+]
+keywords = ["asyncio", "download-manager", "http", "cli"]
+dependencies = [
+    "aiohttp>=3.9.0",
+    "aiofiles>=23.0.0",
+    "tqdm>=4.66.0",
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+pydm = "pydm.cli.main:main"
+
+[project.urls]
+"Homepage" = "https://github.com/Pratikpi/PyDM"
+"Bug Tracker" = "https://github.com/Pratikpi/PyDM/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
