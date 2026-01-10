@@ -80,7 +80,15 @@ PyDM/
 
 ### Running Tests
 
-To run the test suite:
+
+
+To run the test suite, first install the test dependencies:
+
+```bash
+pip install pytest pytest-asyncio
+```
+
+Then run:
 
 ```bash
 pytest tests/
