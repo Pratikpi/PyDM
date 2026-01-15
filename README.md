@@ -53,14 +53,16 @@ pydm <URL> [OPTIONS]
 
 ### Examples
 
-**Basic download:**
+You can use these commands to verify the downloader using reliable test files from [OVH Proof](https://proof.ovh.net/files).
+
+**Basic download (100MB):**
 ```bash
-pydm https://example.com/largefile.zip
+pydm https://proof.ovh.net/files/100Mb.dat
 ```
 
-**Download with 16 segments and saved as `my_archive.zip`:**
+**High-speed test (1GB with 16 segments):**
 ```bash
-pydm https://example.com/largefile.zip -o my_archive.zip -s 16
+pydm https://proof.ovh.net/files/1Gb.dat -o my_archive.zip -s 16
 ```
 
 ## Development
